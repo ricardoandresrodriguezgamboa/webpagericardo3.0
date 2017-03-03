@@ -36,14 +36,51 @@ background-color: rgba(15, 168, 237, 0.4);
 .info{
     
      background:rgba(0,0,0,0.5);
-     height:80px;
+     height:100px;
      color:white;
      position: fixed;
      z-index: 3;
      bottom: 0;
      width:100%;
+     
  
 } 
+
+.redes-sociales{
+  
+    padding:30px;
+ 
+
+
+}
+
+.facebook{
+     margin-left:20px;
+}
+
+.youtube{
+    margin-left:20px;
+}
+
+.twitter{
+    margin-left:20px;
+}
+
+.redes-sociales img{
+     opacity:0.8;
+}
+
+.redes-sociales img:hover{
+    opacity:1;
+}
+
+.informacion{
+      
+       padding:20px;
+  
+       text-align:right;
+}
+
 
 
 
@@ -75,24 +112,8 @@ background-color: rgba(15, 168, 237, 0.4);
 
 
 @media screen and (max-width:991px){
-    .nav{
-        top:0;
-    }
-    .nav a{
-        height:45px;
-        
-    }
-   
+  
 
-    .panel-personalizado{
-          padding:0;
-    }
-
-    .circle-bar1{
-        height:80px;
-        width:80px;
-    
-    }
     
 }
 
@@ -100,12 +121,22 @@ background-color: rgba(15, 168, 237, 0.4);
 
 @media screen and (max-width:767px){
    
-    
-
-    body{
-            overflow-x:hidden;
-      
+    .info{
+        height:auto;
     }
+
+    .redes-sociales{
+        text-align:center;
+        padding:5px;
+    }
+
+    .informacion{
+        text-align:center;
+        padding:5px;
+        margin-left:15px;
+    }
+
+ 
 
 
 }
@@ -138,6 +169,7 @@ background-color: rgba(15, 168, 237, 0.4);
 @media (max-width: 480px) {
 .header-home{/*background:lightcoral;*/  font-size:20px;}
 .capitalize{font-size:25px;}
+
 
 }
 
