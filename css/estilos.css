@@ -36,7 +36,11 @@ background-color: rgba(15, 168, 237, 0.4);
 .nav{
  font-family:raleway;
  font-size:15px;
+}
 
+.active{
+      background-color: rgba(15, 168, 237, 0.7);
+      
 }
 
 .info{
@@ -44,10 +48,11 @@ background-color: rgba(15, 168, 237, 0.4);
      background:rgba(0,0,0,0.5);
      height:100px;
      color:white;
-     position: fixed;
+     position: absolute;
      z-index: 3;
      bottom: 0;
      width:100%;
+     
      
  
 } 
@@ -72,6 +77,7 @@ background-color: rgba(15, 168, 237, 0.4);
     margin-left:20px;
 }
 
+
 .redes-sociales img{
      opacity:0.8;
 }
@@ -83,13 +89,64 @@ background-color: rgba(15, 168, 237, 0.4);
 .informacion{
       
        padding:20px;
-  
+       font-size:15px;
        text-align:right;
+       font-family:Nilland;
+}
+
+.informacion i{
+    font-size:19px;
 }
 
 
+#sobre-mi{
+    background:#f2f2f2;
+    height:auto;
+}
+
+.header-section{
+     border-bottom: 2px solid rgba(15, 168, 237, 0.7);
+     padding:15px;
+     text-align:center;
+     color:#333;
+     font-family:Nilland;
+     font-size:25px;
+     width:150px;
+     margin:auto;
+}
+
+.perfil{
+      margin-top:80px;
+    
+}
+
+.perfil img{
+    box-shadow:0px 0px 2px black;
+    border-radius:50%;
+    margin:auto;
+}
+
+.descripcion{
+    /*background:#f2f2f2;*/
+    font-family:Nilland;
+    margin-top:20px;
+    /*word-break: break-all;*/
+    /*box-shadow:0px 0px 1px gray;*/
+    word-wrap: break-word;
+    padding:20px;
+    /*width:700px;*/
+    font-size:18px;
+
+  
+   
+
+}
 
 
+#diseño-web{
+    background:#2F93D6;
+    height:600px;
+}
 
 
 
@@ -118,7 +175,15 @@ background-color: rgba(15, 168, 237, 0.4);
 
 
 @media screen and (max-width:991px){
-  
+    
+  .perfil{
+        margin-top:80px;
+
+  }
+
+    .descripcion{
+        margin-top:55px;
+    }
 
     
 }
