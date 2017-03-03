@@ -121,6 +121,14 @@ background-color: rgba(15, 168, 237, 0.4);
 
 @media screen and (max-width:767px){
    
+    .header-home{
+         font-family:Nilland;
+    }
+
+    .capitalize{
+        font-family:Nilland;
+    }
+
     .info{
         height:auto;
     }
