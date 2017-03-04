@@ -50,12 +50,10 @@
   text-decoration:none;
 }
 
+.slides-navigation a:focus,
 .slides-navigation a:hover{
   color:deepskyblue;
 }
-
- 
-
 
 
 .slides-navigation a.prev {

@@ -1,0 +1,95 @@
+#header{
+     border-bottom:  1px solid #f3f3f3;
+}
+
+.brand-name
+{
+    text-indent:-5px;
+
+
+}
+
+.nav{
+ font-family:raleway;
+ font-size:15px;
+ 
+}
+
+
+.logo{
+    float:left;
+    padding:5px;
+}
+
+.navbar-brand{
+   color: #333;
+ 
+  
+}
+
+
+.banner{
+    background:url("../img/develop5.jpg");
+    height:500px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+}
+
+.activo{
+      background-color:#333;
+      color:deepskyblue !important;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querys */
+
+@media screen and (max-width:767px){
+   
+
+   .nav{
+       background:#f2f2f2;
+   }
+
+    #header{  background:#f2f2f2;}
+
+   .brand-name{
+       display:none;
+   }
+
+   .logo{
+       margin-left:4px;
+       margin-top:5px;
+     
+   }
+
+   .logo img{
+       width:31px;
+       height:31px;
+   }
+
+
+ 
+
+
+}
