@@ -75,7 +75,7 @@ background-color: rgba(15, 168, 237, 0.4);
 .info{
     
      background:rgba(0,0,0,0.5);
-     height:100px;
+     height:95px;
      color:white;
      position: absolute;
      z-index: 3;
@@ -89,7 +89,7 @@ background-color: rgba(15, 168, 237, 0.4);
 .redes-sociales{
   
     padding:30px;
- 
+
 
 
 }
@@ -121,8 +121,8 @@ background-color: rgba(15, 168, 237, 0.4);
        font-size:15px;
        text-align:right;
        font-family:Nilland;
+     
 }
-
 .informacion i{
     font-size:19px;
 }
@@ -227,20 +227,19 @@ background-color: rgba(15, 168, 237, 0.4);
 @media screen and (max-width:767px){
    
    
-
-    .info{
-        height:auto;
-    }
+   .info{
+       height:auto;
+   }
 
     .redes-sociales{
-        text-align:center;
-        padding:5px;
+        margin-left:-40px;
+        padding:15px;
     }
 
     .informacion{
-        text-align:center;
-        padding:5px;
-        margin-left:15px;
+      
+        padding:0;
+         margin-right:-10px;
     }
     
     .btn-package{
@@ -253,7 +252,8 @@ background-color: rgba(15, 168, 237, 0.4);
    }
 
    .brand-name{
-       display:none;
+       font-size:15px;
+       text-indent:-18px;
    }
 
    .logo{
@@ -273,6 +273,14 @@ background-color: rgba(15, 168, 237, 0.4);
 
 }
 
+
+@media screen and (max-width:235px){
+   .brand-name{
+       display:none;
+   }
+}
+
+
 /*media querys for slide*/
 
 
@@ -283,25 +291,30 @@ background-color: rgba(15, 168, 237, 0.4);
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
- .header-home{/*background:yellow;*/ margin-top:100px;}
+ .header-home{/*background:yellow;*/ margin-top:80px; font-size:27px;}
 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
- .header-home{/*background:blue;*/ margin-top:70px; font-size:28px;}
+ .header-home{/*background:blue;*/ margin-top:70px; font-size:25px;}
+ .capitalize{font-size:30px;}
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-.header-home{/*background:red;*/ margin-top:55px; font-size:24px;}
-   .capitalize{font-size:29px;}
+.header-home{/*background:red; */margin-top:55px; font-size:20px;}
+   .capitalize{font-size:22px;}
+   .btn-package{display:none;}
+   .redes-sociales img{width:20px; height:20px;}
+   .informacion{font-size:12px;}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-.header-home{/*background:lightcoral;*/  font-size:20px;}
-.capitalize{font-size:25px;}
+.header-home{/*background:lightcoral;*/ font-size:16px;}
+.capitalize{font-size:18px;}
+ .btn-package{display:none;}
 
 
 }
