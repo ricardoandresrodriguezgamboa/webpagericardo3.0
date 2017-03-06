@@ -4613,6 +4613,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: gray;
   transition:all 0.3s ease;
 
+
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
