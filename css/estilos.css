@@ -11,16 +11,7 @@ src: url('../fonts/Nilland.ttf');
        animation-name:c-fade-in;
 }
 
-@keyframes c-fade-in {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
+
 
 
 .header-home{
@@ -129,7 +120,7 @@ background-color: rgba(15, 168, 237, 0.4);
 
 .informacion{
       
-       padding:20px;
+       padding-top:15px;
        font-size:15px;
        text-align:right;
        font-family:Nilland;
@@ -148,7 +139,7 @@ background-color: rgba(15, 168, 237, 0.4);
 
 .header-section{
      border-bottom: 2px solid rgba(15, 168, 237, 0.7);
-     padding:15px;
+     padding:10px;
      text-align:center;
      color:#333;
      font-family:Nilland;
@@ -158,26 +149,27 @@ background-color: rgba(15, 168, 237, 0.4);
 }
 
 .perfil{
-      margin-top:80px;
+      margin-top:55px;
     
 }
 
 .perfil img{
-    box-shadow:0px 0px 2px black;
+    box-shadow:0px 0px 1px black;
     border-radius:50%;
     margin:auto;
 }
 
 .descripcion{
-    /*background:#f2f2f2;*/
-    font-family:Nilland;
-    margin-top:20px;
-    /*word-break: break-all;*/
-    /*box-shadow:0px 0px 1px gray;*/
+    background:#fff;
+    font-family:raleway;
+    margin-top:40px;
+    box-shadow:0px 0px 1px gray;
     word-wrap: break-word;
     padding:20px;
-    /*width:700px;*/
-    font-size:18px;
+    margin-left:auto;
+    margin-right:auto;
+    width:700px;
+    font-size:15px;
 
   
    
@@ -186,24 +178,84 @@ background-color: rgba(15, 168, 237, 0.4);
 
 
 .img-separator{
-    background:url('../img/develop6.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    height:400px;
+  background:url('../img/web.jpg');
+  background-size:cover;
+  height:700px;
 }
 
-#diseño-web{
+.separator{
+    height:100px;
+    background:rgba(15, 168, 237, 0.7);
+}
+
+.header-section-skill{
+     border-bottom: 2px solid rgba(15, 168, 237, 0.7);
+     padding:10px;
+     text-align:center;
+     color:#333;
+     font-family:Nilland;
+     font-size:25px;
+     width:400px;
+     margin:10px auto;
+}
+
+.panel{
+    margin-top:80px;
+    padding:40px;
+    font-family:nunito;
+    transition: 0.5s ease;
+    height:170px;
+    background-color:#f2f2f2 !important;
+    text-align:center;
+ 
+    
+}
+
+.panel:hover{
+     
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     transition: 0.5s ease;
+     box-shadow:0px 0px 1px grey;
+
+    
+}
+
+
+
+#diseno-web{
     /*background:#2F93D6;*/
-    background:#fff;
-    height:600px;
+    background:coral;
+    height:800px;
+}
+
+#portafolio{
+    background:lightblue;
+     height:800px;
+}
+
+#contacto{
+     background:lightgreen;
+     height:800px;
 }
 
 
 
 
 
+/*Effects*/
 
+@keyframes c-fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
 
 
 
@@ -229,7 +281,12 @@ background-color: rgba(15, 168, 237, 0.4);
 
     .descripcion{
         margin-top:55px;
+        width:auto;
     }
+
+  .elemento i{
+      display:none;
+  }
 
     
 }
@@ -238,7 +295,8 @@ background-color: rgba(15, 168, 237, 0.4);
 
 @media screen and (max-width:767px){
    
-   
+
+
    .info{
        height:auto;
    }
@@ -279,9 +337,11 @@ background-color: rgba(15, 168, 237, 0.4);
        height:31px;
    }
 
-
+      .header-section-skill{width:200px;}
  
-
+        .elemento i{
+            display:initial;
+        }
 
 }
 
@@ -290,6 +350,10 @@ background-color: rgba(15, 168, 237, 0.4);
    .brand-name{
        display:none;
    }
+
+   .redes-sociales{display:none;}
+   .informacion{text-align:center; width:300px; margin-left:-155px;}
+
 }
 
 @media screen and (max-width:270px){
@@ -334,6 +398,8 @@ background-color: rgba(15, 168, 237, 0.4);
 .header-home{/*background:lightcoral;*/ font-size:16px;}
 .capitalize{font-size:18px;}
  .btn-package{display:none;}
+ .descripcion{font-size:15px;}
+
 
 
 }
