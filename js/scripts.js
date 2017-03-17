@@ -1,7 +1,6 @@
 $(function(){
      
-          
-  
+ 
 
         var header = document.getElementById('header');
         
@@ -13,6 +12,9 @@ $(function(){
 });
    
     $(document).ready(function(){
+        
+        
+
         $('.ir-arriba').click(function(){
             $('body,html').animate({
                 scrollTop: '0px'
@@ -67,3 +69,5 @@ function onScroll(event){
         }
     });
 }
+
+

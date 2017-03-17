@@ -15,7 +15,7 @@ src: url('../fonts/Nilland.ttf');
 
 
 .header-home{
-    margin-top:230px;
+    margin-top:200px;
     color:#fff;
     text-shadow:3px 3px 3px black;
     text-align:left;
@@ -137,7 +137,7 @@ background-color: rgba(15, 168, 237, 0.4);
 
     background:#f2f2f2;
     height:auto;
-    padding-bottom:50px;
+   
 
 }
 
@@ -190,23 +190,25 @@ background-color: rgba(15, 168, 237, 0.4);
     background:#fff;
     width:700px;
     height:500px;
-    margin:60px auto;
+    margin:35px auto;
     padding:25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.perfil{background:lightskyblue; height:165px; padding:8px;}
+.perfil{background: url('../img/web.jpg'); background-size:cover;   /*background:lightskyblue;*/height:170px; padding:8px;}
+
 
 .perfil .titulo{
     margin-left:190px;
-    margin-top:-180px;
-    color:#333;
+    margin-top:-130px;
+    color:#fff;
     font-size:26px;
     width:300px;
     font-family:Nilland;
     font-weight:600;
     text-align:center;
-       word-wrap: break-word;
+    word-wrap: break-word;
+    text-shadow:0px 0px 3px black;
     
 }
 
@@ -219,7 +221,7 @@ background-color: rgba(15, 168, 237, 0.4);
 }
 
 .titulo p{
-    color:#fff;
+    color:#2BC0E5;
     font-size:17px;
     text-align:center;
        word-wrap: break-word;
@@ -230,7 +232,7 @@ background-color: rgba(15, 168, 237, 0.4);
     font-family:raleway;
     word-wrap: break-word;
     font-size:14px;
-    margin-top:40px;
+    margin-top:20px;
 
 
 }
@@ -262,14 +264,24 @@ background-color: rgba(15, 168, 237, 0.4);
      margin:auto;
 }
 
+.skills-container{
+    margin-top:35px;
+}
+
 .panel{
-    margin-top:80px;
-    padding:40px;
+    margin-top:20px;
+    border: 1px solid #f2f2f2 !important;
+    padding:18px;
+    font-weight:bold;
+    font-family:Arial,  Helvetica, sans-serif;
+    transition: 0.5s ease;
+
+    /*
     font-family:nunito;
     transition: 0.5s ease;
-    height:170px;
+    height:185px;
     text-align:center;
-    background:#f2f2f2 !important;
+    background:#f2f2f2 !important;*/
  
     
 }
@@ -300,6 +312,7 @@ background-color: rgba(15, 168, 237, 0.4);
     bottom:20px;
     right:13px;
     z-index:100;
+    opacity:0.9;
 } 
 
 .ir-arriba:hover{
@@ -425,7 +438,10 @@ transform: translateY(-100%);
       display:none;
   }
 
-    
+  .panel{
+       height:auto;
+  }  
+
 }
 
 
@@ -480,9 +496,20 @@ transform: translateY(-100%);
         width:auto;
     }
 
+.panel{
+    width:200px;
+    height:auto;
+    margin:50px auto;
+    transform:none;
+}
+
+.panel:hover{
+     transform:none;
+}
 
 
-.perfil{height:300px;}
+
+.perfil{height:230px;}
 .perfil img[alt='perfil']{
     margin-left:auto; margin-right:auto; width:130px;}
 
@@ -508,19 +535,25 @@ transform: translateY(-100%);
 
 
 @media screen and (max-width:235px){
-   .brand-name{
-       display:none;
-   }
-
+   .brand-name{ display:none;}
    .redes-sociales{display:none;}
    .informacion{text-align:center; width:300px; margin-left:-155px;}
-
+   .panel{width:auto;}
+   body{overflow-x:hidden;}
 }
 
 @media screen and (max-width:270px){
    .redes-sociales{
        padding-top:40px;
    }
+}
+
+
+@media screen and (min-height:565px) and (max-width:980px){
+         
+     .header-home{ font-size:26px !important;}
+      .capitalize{font-size:30px !important;}
+
 }
 
 
@@ -535,19 +568,21 @@ transform: translateY(-100%);
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
  .header-home{/*background:yellow;*/ margin-top:80px; font-size:27px;}
- .panel{width:130px; height:130px;}
+ 
 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
- .header-home{/*background:blue;*/ margin-top:70px; font-size:25px;}
+ .header-home{ /*background:blue;*/ margin-top:100px; font-size:25px;}
  .capitalize{font-size:30px;}
+ #skills{height:auto;}
+
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-.header-home{/*background:red; */margin-top:55px; font-size:20px;}
+.header-home{margin-top:105px; font-size:20px;}
    .capitalize{font-size:22px;}
    .btn-package{display:none;}
    .redes-sociales img{width:20px; height:20px;}
@@ -558,7 +593,7 @@ transform: translateY(-100%);
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 .header-home{/*background:lightcoral;*/ font-size:16px;}
-.capitalize{font-size:18px;}
+.capitalize{font-size:26px !important; }
  .btn-package{display:none;}
  .descripcion{font-size:15px;}
  .perfil{height:auto;}
