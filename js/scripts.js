@@ -1,3 +1,6 @@
+/*$(window).load(function () {
+  $('#cargando').hide();
+});*/
 
 $(function(){
      
@@ -16,11 +19,11 @@ $(function(){
       
             
               
-        $(window).scroll(function() {
+        /*$(window).scroll(function() {
           if($(document).scrollTop() > 15 && $(window).width() > 767) {
             $('#header').addClass('shrink');
             $('#header').css('transition','all 0.4s ease');
-            $('#header').css('background', '#fff');
+            $('#header').css('background', '#f2f2f2');
             $('.navbar-inverse .navbar-nav > li > a').css('color','#5C5858');
             $('#header').css('box-shadow','0px 0px 3px gray');
             $('.navbar-inverse .navbar-brand ').css('color','#333');
@@ -33,8 +36,9 @@ $(function(){
             $('#header').css('box-shadow','none');
             $('.navbar-inverse .navbar-nav > li > a').css('color','#fff');
             $('.navbar-inverse .navbar-brand ').css('color','#fff');
+      
             }   
-      });
+      });*/
         
 
         $('.ir-arriba').click(function(){
@@ -44,7 +48,7 @@ $(function(){
         });
 
         $(window).scroll(function(){
-                if($(this).scrollTop() > 0){
+                if($(this).scrollTop() > 400){
                       $('.ir-arriba').slideDown(300);
                    
                 }else{  
@@ -54,7 +58,23 @@ $(function(){
         });
     });
 
-    $(document).on("scroll", onScroll);
+  jQuery(function() {
+  jQuery('#navegacion-rr ul li a[href^="#"]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html,body').animate({
+          scrollTop: target.offset().top-70
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+   /* $(document).on("scroll", onScroll);
     
     //smoothscroll
     $('#navegacion-rr ul li a[href^="#"]').on('click', function (e) {
@@ -95,5 +115,5 @@ function onScroll(event){
         }
     });
 }
-
+*/
 

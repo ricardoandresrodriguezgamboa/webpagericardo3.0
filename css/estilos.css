@@ -11,7 +11,12 @@ src: url('../fonts/Nilland.ttf');
        animation-name:c-fade-in;
 }
 
-
+/*#cargando {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif') no-repeat center;
+}*/
 
 
 .header-home{
@@ -88,11 +93,19 @@ background-color: rgba(15, 168, 237, 0.4);
 }
 
 .activo{
- 
-  
+     
+
+    color:#2F93D6 !important;
+
+
+        /*background:rgba(43, 192, 229, 0.8) !important;
+        content:none !important;
+        color:#fff !important;*/
+   
+
    /* width: 100%  !important;
     height:45px;
-    border-bottom:2px solid #00bcd4 ;
+
     transition:all 0.5s ease !important;*/
     /*height:45px;
     background:#2BC0E5 !important;*/
@@ -164,6 +177,7 @@ background-color: rgba(15, 168, 237, 0.4);
    
     background:#f2f2f2;
     height:auto;
+    padding-bottom:50px;
     
    
 
@@ -173,7 +187,13 @@ background-color: rgba(15, 168, 237, 0.4);
  
      font-family:Nilland;
      font-size:25px;
-     
+     text-align:center;
+     position:relative;
+     top:10px;
+     border-bottom: 2px solid rgba(15, 168, 237, 0.7);
+     padding:10px;
+     width:160px;
+     margin:auto;
 }
 
 
@@ -223,7 +243,7 @@ background-color: rgba(15, 168, 237, 0.4);
 }*/
 
 
-.caja-perfil{
+/*.caja-perfil{
     background:#fff;
     width:700px;
     height:500px;
@@ -232,7 +252,7 @@ background-color: rgba(15, 168, 237, 0.4);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.perfil{background: url('../img/web.jpg'); background-size:cover;   /*background:lightskyblue;*/height:170px; padding:8px;}
+.perfil{background: url('../img/web.jpg'); background-size:cover;   background:lightskyblue;height:170px; padding:8px;}
 
 
 .perfil .titulo{
@@ -276,9 +296,52 @@ background-color: rgba(15, 168, 237, 0.4);
  
 
 
+}*/
+
+
+#perfil-img{
+  margin-top:50px;
 }
 
+.perfil .titulo{
+   
+    color:#333;
+    font-size:21px;
+    width:300px;
+    font-family:Nilland;
+    font-weight:600;
+    margin:15px auto;
+    text-align:center;
+    word-wrap: break-word;
 
+
+    
+}
+
+.titulo p{
+    color:#2BC0E5;
+    font-size:15px;
+    text-align:center;
+     word-wrap: break-word;
+     font-family:Nunito;
+
+
+  
+}
+
+.descripcion{
+ 
+    font-family:raleway;
+    word-wrap: break-word;
+    font-size:15px;
+    margin-top:40px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    width:700px;
+
+
+}
 
 
 
@@ -302,7 +365,7 @@ background-color: rgba(15, 168, 237, 0.4);
      font-family:Nilland;
      font-size:25px;
      width:400px;
-     margin:auto;
+     margin:10px auto;
 }
 
 .skills-container{
@@ -478,12 +541,12 @@ transform: translateY(-100%);
         margin-top:80px;
 
   }
-
+*/
     .descripcion{
-        margin-top:55px;
+    
         width:auto;
     }
-*/
+
 
  
   .elemento i{
@@ -506,6 +569,10 @@ transform: translateY(-100%);
        height:auto;
    }
 
+   .descripcion{
+       margin-top:-50px;
+   }
+
     .redes-sociales{
         margin-left:-40px;
         padding:15px;
@@ -524,9 +591,17 @@ transform: translateY(-100%);
 
       
    #header{
-       background:#fff !important;
+       background:#f2f2f2 !important;
        box-shadow:0px 0px 3px gray !important;
+   
+ 
    }
+
+
+
+  .navbar-inverse .navbar-toggle{
+      background:#f2f2f2 !important;
+  }
 
    .navbar-inverse .navbar-toggle{
        background:#333 !important;
@@ -606,7 +681,12 @@ transform: translateY(-100%);
 
 }    
 
+@media screen and (max-height:320px){
+   
+   .info{display:none;}
+   .header-home{margin-top:80px !important;}
 
+}
 
 @media screen and (max-width:235px){
    .brand-name{ display:none;}
@@ -670,8 +750,13 @@ transform: translateY(-100%);
 .header-home{/*background:lightcoral;*/ font-size:16px;}
 .capitalize{font-size:26px !important; }
  .btn-package{display:none;}
- .descripcion{font-size:15px;}
+ .descripcion{font-size:13px; margin-top:-10px;}
  .perfil{height:auto;}
+ #circle1{ margin:auto;}
+ .progressbar-text{
+    top:150px !important;
+ }
+ .panel{height:170px; width:150px;}
 
 
 
